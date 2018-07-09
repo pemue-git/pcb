@@ -18,3 +18,4 @@ and [here](https://github.com/kc-GitHub/Wettersensor/blob/master/Schematic/Unive
   * DS18B20 and pullup to 3.3 V connected to D3, supply voltage is 3.3V
   * added additional tantalum capacitor to MAX1724 output
   * changed pinout of I2C connector to match pinning of MAX44009 light sensor module
+  * added SJ2 for battery voltage measurement w/o battery load
