@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15988,6 +15988,7 @@ www.irf.com&lt;p&gt;
 <part name="T1" library="transistor-small-signal" deviceset="BSS123" device="" value="IRML6344"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="M0805" value="4,7k"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="SJ2" library="jumper" deviceset="SJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15997,9 +15998,14 @@ www.irf.com&lt;p&gt;
 <text x="208.28" y="127" size="1.778" layer="97">I2C address: 0x77</text>
 <text x="208.28" y="127" size="1.778" layer="97">I2C address: 0x77</text>
 <text x="208.28" y="106.68" size="1.778" layer="97" rot="MR180">I2C address: 0x76</text>
+<text x="120.65" y="124.46" size="1.778" layer="97" rot="MR180">either T1/R4 OR
+SJ2 closed</text>
 </plain>
 <instances>
-<instance part="IC1" gate="G$1" x="114.3" y="76.2"/>
+<instance part="IC1" gate="G$1" x="114.3" y="76.2" smashed="yes">
+<attribute name="NAME" x="96.52" y="35.56" size="1.778" layer="95"/>
+<attribute name="VALUE" x="109.22" y="106.68" size="1.778" layer="96"/>
+</instance>
 <instance part="R1" gate="G$1" x="88.9" y="109.22" rot="R270"/>
 <instance part="P+1" gate="1" x="88.9" y="119.38" rot="MR0"/>
 <instance part="GND4" gate="1" x="73.66" y="48.26" rot="MR0"/>
@@ -16090,13 +16096,13 @@ www.irf.com&lt;p&gt;
 <instance part="CONFIG" gate="G$1" x="160.02" y="55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="158.115" y="62.23" size="1.778" layer="95"/>
 </instance>
-<instance part="R2" gate="G$1" x="101.6" y="132.08" smashed="yes">
-<attribute name="NAME" x="100.584" y="133.8326" size="1.778" layer="95"/>
-<attribute name="VALUE" x="98.298" y="128.778" size="1.778" layer="96"/>
+<instance part="R2" gate="G$1" x="99.06" y="132.08" smashed="yes">
+<attribute name="NAME" x="98.044" y="133.8326" size="1.778" layer="95"/>
+<attribute name="VALUE" x="95.758" y="128.778" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="116.84" y="132.08" smashed="yes">
-<attribute name="NAME" x="113.284" y="133.8326" size="1.778" layer="95"/>
-<attribute name="VALUE" x="118.618" y="133.858" size="1.778" layer="96"/>
+<instance part="R3" gate="G$1" x="114.3" y="132.08" smashed="yes">
+<attribute name="NAME" x="110.744" y="133.8326" size="1.778" layer="95"/>
+<attribute name="VALUE" x="116.078" y="133.858" size="1.778" layer="96"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="162.56" y="0"/>
@@ -16138,6 +16144,10 @@ www.irf.com&lt;p&gt;
 <attribute name="VALUE" x="136.398" y="135.128" size="1.778" layer="96"/>
 </instance>
 <instance part="GND20" gate="1" x="134.62" y="128.27" rot="MR0"/>
+<instance part="SJ2" gate="1" x="125.73" y="142.24" smashed="yes">
+<attribute name="NAME" x="123.825" y="144.78" size="1.778" layer="95"/>
+<attribute name="VALUE" x="123.19" y="138.43" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16599,6 +16609,8 @@ www.irf.com&lt;p&gt;
 <wire x1="130.81" y1="142.24" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="142.24" x2="137.16" y2="142.24" width="0.1524" layer="91"/>
 <junction x="134.62" y="142.24"/>
+<pinref part="SJ2" gate="1" pin="2"/>
+<junction x="130.81" y="142.24"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -16615,11 +16627,11 @@ www.irf.com&lt;p&gt;
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="132.08" x2="106.68" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="132.08" x2="111.76" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="132.08" x2="109.22" y2="147.32" width="0.1524" layer="91"/>
-<junction x="109.22" y="132.08"/>
-<wire x1="109.22" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="132.08" x2="106.68" y2="147.32" width="0.1524" layer="91"/>
+<junction x="106.68" y="132.08"/>
+<wire x1="106.68" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
 <label x="134.62" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -16666,8 +16678,8 @@ www.irf.com&lt;p&gt;
 <net name="U-BAT" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
-<label x="86.36" y="132.08" size="1.778" layer="95"/>
+<wire x1="93.98" y1="132.08" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
+<label x="83.82" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="BATT"/>
@@ -16848,7 +16860,11 @@ www.irf.com&lt;p&gt;
 <segment>
 <pinref part="T1" gate="G$1" pin="D"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="123.19" y1="132.08" x2="121.92" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="123.19" y1="132.08" x2="120.65" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="SJ2" gate="1" pin="1"/>
+<wire x1="120.65" y1="132.08" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="120.65" y1="142.24" x2="120.65" y2="132.08" width="0.1524" layer="91"/>
+<junction x="120.65" y="132.08"/>
 </segment>
 </net>
 </nets>
@@ -16856,4 +16872,10 @@ www.irf.com&lt;p&gt;
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
