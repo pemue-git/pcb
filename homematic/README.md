@@ -9,11 +9,11 @@ and [here](https://github.com/kc-GitHub/Wettersensor/blob/master/Schematic/Unive
 
 ### Changelog
 
-* v1.3 (15.06.2018)
+* v1.3 (06/15/2018)
   * GDO2 of CC1101 module connected to D3
   * BME280 added (temperature, pressure, humidity)
 
-* v1.4 (09.07.2018)
+* v1.4 (07/09/2018)
   * GDO2 removed, added additional capacitor to CC1101 module
   * DS18B20 and pullup to 3.3 V connected to D3, supply voltage is 3.3V
   * added additional tantalum capacitor to MAX1724 output
