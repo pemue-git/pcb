@@ -21,7 +21,7 @@ v1.2 gerber files can be found [here](Aussensensor_v1.2_gerber)
   * added additional tantalum capacitor to MAX1724 output
   * changed pinout of I2C connector to match pinning of MAX44009 light sensor module
   * added SJ2 for battery voltage measurement w/o battery load
-  
-Top layout ![picture](pic/Aussensensor_v1.4_top.png)
-
-Bottom layout ![picture](pic/Aussensensor_v1.4_bot.png)
+  * layout (top)
+    ![picture](pic/Aussensensor_v1.4_top.png)
+  * layout (bot) 
+    ![picture](pic/Aussensensor_v1.4_bot.png)
