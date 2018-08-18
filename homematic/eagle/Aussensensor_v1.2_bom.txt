@@ -1,0 +1,38 @@
+Stückliste Außensensor v1.2
+---------------------------
+Part          Value                 Device                Package               
+C1            100n                  C-EUC0805             C0805                 
+C2            100n                  C-EUC0805             C0805                 
+C3            100n                  C-EUC0805             C0805                 
+C4            100n                  C-EUC0805             C0805                 
+C5            100n                  C-EUC0805             C0805                 
+C6            100n                  C-EUC0805             C0805                 
+C7            100n                  C-EUC0805             C0805                 
+C8            10µ                   C-EUC1206             C1206                 
+C9            10µ                   C-EUC1206             C1206                 
+R1            10k                   R-EU_M0805            M0805                 
+R2            470k                  R-EU_M0805            M0805                 
+R3            100k                  R-EU_M0805            M0805                 
+R4            4,7k                  R-EU_M0805            M0805                 
+R5            4,7k                  R-EU_M0805            M0805                 
+R6            1,0k                  R-EU_M0805            M0805                 
+LED1          green                 LEDCHIP-LED0805       CHIP-LED0805          
+L1            10µH                  L-EUL4532P            L4532P                
+CONFIG        DTSM-3                DTSM-3                DTSM-3                
+IC1           Atmega 328P           MEGA8-AI              TQFP32-08             
+IC2           MAX1724               MAX1724               SOT23-5L              
+IC3           TSL2561               TSL2560               TMB-6                 
+IC4           BMP180                BMP180                LGA-7                 
+CC1101-MODULE                       CC1101 module         SMD module
+ANT           Ant                   1,6/0,8               1,6/0,8               
+
+not used
+BAT+_3V                             1,6/0,9               1,6/0,9               
+BAT-                                1,6/0,9               1,6/0,9               
+PAD1                                SMD2                  SMD1,27-2,54          
+PAD2                                SMD2                  SMD1,27-2,54          
+JP1                                 M12PTH                1X12                  
+JP2                                 M12PTH                1X12                  
+I2C           I2C                   M02PTH                1X02                  
+SV1                                 FE04-1                FE04-1                
+SJ1                                 SJ                    SJ                    
