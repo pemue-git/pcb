@@ -1,0 +1,31 @@
+
+Itead Studio gerber layer naming convention
+===========================================
+Colors for better view in GCPrevue
+
+TXT ... Excellon drill file
+
+GML ... Milling (grey)
+DO or GKO  ... Drills (gerber, yellow)
+
+GTS ... solder mask top (grey)
+GBS ... solder mask bottom (grey)
+
+GTO ... silk screen top (light yellow)
+GBO ... silk screen bottom (light yellow)
+
+GTL ... copper top (green)
+GBL ... copper bottom (red)
+
+GTP ... solder paste top (pink)
+GBP ... solder paste bottom (pink)
+
+minimum layers:
+<name>.GTL
+<name>.GBL
+<name>.GTO
+<name>.GBO
+<name>.GTS
+<name>.GBS
+<name>.GKO or <name>.DO
+<name>.TXT

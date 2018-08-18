@@ -7,6 +7,8 @@ This layout is based on Dirk's *Universalsensor* described [here](https://wiki.f
 v1.2 of the layout can be found [here](https://github.com/kc-GitHub/Wettersensor/blob/master/Schematic/Universal-Sensor_Atmega328.sch) 
 and [here](https://github.com/kc-GitHub/Wettersensor/blob/master/Schematic/Universal-Sensor_Atmega328.brd)
 
+v1.2 gerber files can be found [here](Aussensensor_v1.2_gerber)
+
 ### Changelog
 
 * v1.3 (06/15/2018)
@@ -19,3 +21,7 @@ and [here](https://github.com/kc-GitHub/Wettersensor/blob/master/Schematic/Unive
   * added additional tantalum capacitor to MAX1724 output
   * changed pinout of I2C connector to match pinning of MAX44009 light sensor module
   * added SJ2 for battery voltage measurement w/o battery load
+  
+Top layout ![picture](pic/Aussensensor_v1.4_top.png)
+
+Bottom layout ![picture](pic/Aussensensor_v1.4_bot.png)
