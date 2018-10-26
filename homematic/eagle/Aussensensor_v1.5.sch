@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16217,6 +16217,8 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <part name="P+13" library="supply1" deviceset="+5V" device="" value="+3.3V"/>
 <part name="SJ3" library="jumper" deviceset="SJ2W" device=""/>
 <part name="IC4" library="TSL256x" deviceset="TSL256*" device="FN"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="M0805" value="100k"/>
+<part name="P+14" library="supply1" deviceset="+5V" device="" value="+3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -16228,7 +16230,7 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <text x="208.28" y="106.68" size="1.778" layer="97" rot="MR180">I2C address: 0x76</text>
 <text x="120.65" y="124.46" size="1.778" layer="97" rot="MR180">either T1/R4 OR
 SJ2 closed</text>
-<text x="132.08" y="154.94" size="1.778" layer="97">I2C address: 0x4A</text>
+<text x="124.46" y="152.4" size="1.778" layer="97">I2C address: 0x4A</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="114.3" y="76.2" smashed="yes">
@@ -16282,15 +16284,15 @@ SJ2 closed</text>
 <instance part="GND14" gate="1" x="259.08" y="129.54" rot="MR0"/>
 <instance part="GND15" gate="1" x="254" y="129.54" rot="MR0"/>
 <instance part="GND16" gate="1" x="200.66" y="129.54" rot="MR0"/>
-<instance part="R6" gate="G$1" x="154.94" y="139.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="158.496" y="137.9474" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="153.162" y="137.922" size="1.778" layer="96" rot="R180"/>
+<instance part="R6" gate="G$1" x="147.32" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="145.5674" y="146.304" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="150.622" y="145.288" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R5" gate="G$1" x="154.94" y="144.78" smashed="yes" rot="R180">
-<attribute name="NAME" x="158.496" y="143.0274" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="153.162" y="143.002" size="1.778" layer="96" rot="R180"/>
+<instance part="R5" gate="G$1" x="157.48" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="155.7274" y="148.844" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="160.782" y="147.828" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+6" gate="1" x="147.32" y="149.86" rot="MR0"/>
+<instance part="P+6" gate="1" x="147.32" y="160.02" rot="MR0"/>
 <instance part="GND18" gate="1" x="236.22" y="157.48" rot="MR0"/>
 <instance part="GND19" gate="1" x="200.66" y="157.48" rot="MR0"/>
 <instance part="I2C" gate="G$1" x="7.62" y="172.72" rot="MR180"/>
@@ -16383,6 +16385,13 @@ SJ2 closed</text>
 <instance part="IC4" gate="G$1" x="218.44" y="167.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="208.28" y="173.99" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
 <attribute name="VALUE" x="228.6" y="157.48" size="1.27" layer="96" rot="MR0"/>
+</instance>
+<instance part="R9" gate="G$1" x="182.88" y="59.69" smashed="yes" rot="R90">
+<attribute name="NAME" x="181.1274" y="58.674" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="186.182" y="57.658" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+14" gate="1" x="182.88" y="68.58" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="180.34" y="71.12" size="1.778" layer="96" rot="MR180"/>
 </instance>
 </instances>
 <busses>
@@ -16613,6 +16622,10 @@ SJ2 closed</text>
 <pinref part="M1" gate="G$1" pin="GDO0"/>
 <wire x1="187.96" y1="53.34" x2="203.2" y2="53.34" width="0.1524" layer="91"/>
 <label x="142.24" y="73.66" size="1.778" layer="95"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="54.61" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="53.34" x2="187.96" y2="53.34" width="0.1524" layer="91"/>
+<junction x="187.96" y="53.34"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="8"/>
@@ -16738,7 +16751,8 @@ SJ2 closed</text>
 <junction x="162.56" y="139.7"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="189.23" y1="139.7" x2="162.56" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="139.7" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="139.7" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="139.7" x2="147.32" y2="142.24" width="0.1524" layer="91"/>
 <label x="144.78" y="91.44" size="1.778" layer="95"/>
 <pinref part="IC6" gate="IC" pin="SDI"/>
 <wire x1="203.2" y1="115.57" x2="189.23" y2="115.57" width="0.1524" layer="91"/>
@@ -16773,7 +16787,7 @@ SJ2 closed</text>
 <wire x1="186.69" y1="144.78" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="88.9" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="144.78" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="144.78" x2="157.48" y2="144.78" width="0.1524" layer="91"/>
 <label x="144.78" y="88.9" size="1.778" layer="95"/>
 <pinref part="IC6" gate="IC" pin="SCK"/>
 <wire x1="203.2" y1="113.03" x2="186.69" y2="113.03" width="0.1524" layer="91"/>
@@ -17025,13 +17039,12 @@ SJ2 closed</text>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="144.78" x2="147.32" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="144.78" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="154.94" x2="147.32" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="154.94" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="139.7" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="147.32" y1="144.78" x2="147.32" y2="147.32" width="0.1524" layer="91"/>
-<junction x="147.32" y="144.78"/>
+<wire x1="147.32" y1="154.94" x2="147.32" y2="157.48" width="0.1524" layer="91"/>
+<junction x="147.32" y="154.94"/>
 </segment>
 <segment>
 <wire x1="241.3" y1="139.7" x2="241.3" y2="144.78" width="0.1524" layer="91"/>
@@ -17098,6 +17111,11 @@ SJ2 closed</text>
 <wire x1="129.54" y1="167.64" x2="127" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="P+13" gate="1" pin="+5V"/>
 <wire x1="127" y1="167.64" x2="127" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+14" gate="1" pin="+5V"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="66.04" x2="182.88" y2="64.77" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="1W" class="0">
