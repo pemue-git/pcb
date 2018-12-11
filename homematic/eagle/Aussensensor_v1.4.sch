@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15981,7 +15981,7 @@ www.irf.com&lt;p&gt;
 <part name="IC6" library="1wire_v6" deviceset="DS18B20" device=""/>
 <part name="P+11" library="supply1" deviceset="+5V" device="" value="+3.3V"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="4k7"/>
 <part name="P+12" library="supply1" deviceset="+5V" device="" value="+3.3V"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="1µ"/>
 <part name="C10" library="rcl" deviceset="CPOL-EU" device="SMCA" value="22µ"/>

@@ -1,5 +1,5 @@
 # PCB
-This repository contains several PCBs for homeautomation, discussions see FHEM forum: forum.fhem.de
+This repository contains several PCBs for homeautomation, discussions see FHEM forum: [forum.fhem.de](https://forum.fhem.de)
 
 ## LacrosseGateWay
 ESP8266 based gateway for LaCrosse sensors inlcuding extemsion PCB
@@ -12,3 +12,4 @@ Interface for Viessmann heating and solar controls (USB, RaspberryPi and WLAN)
 
 ## Homematic sensors
 Several versions of Homematic sensors for usage inside and outside
+[Aussensensor](homematic)

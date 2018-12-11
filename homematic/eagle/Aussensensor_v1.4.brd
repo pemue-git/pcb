@@ -94,7 +94,7 @@
 <board>
 <plain>
 <text x="7.9058" y="27.94" size="1.27" layer="25">CC1101-Sensor P/L/H</text>
-<text x="30.16255" y="26.03505" size="1.27" layer="25">Rev 1.4, 07/2018
+<text x="30.16255" y="26.03505" size="1.27" layer="25">v1.4, 07/2018
 (c) Dirk/PeMue</text>
 <wire x1="2.69875" y1="29.4" x2="53.49875" y2="29.4" width="0" layer="20"/>
 <wire x1="56.2" y1="26.67" x2="56.2" y2="2.69875" width="0" layer="20"/>
@@ -1169,7 +1169,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="0.635" y="2.794" size="0.8128" layer="25" ratio="10"/>
 <attribute name="VALUE" x="-1.397" y="9.525" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R8" library="rcl" package="M0805" value="10k" x="3.81" y="6.985" smashed="yes" rot="R90">
+<element name="R8" library="rcl" package="M0805" value="4k7" x="3.81" y="6.985" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.715" y="6.096" size="0.8128" layer="25" rot="R90"/>
 <attribute name="VALUE" x="6.096" y="5.969" size="1.27" layer="27" rot="R90"/>
 </element>
