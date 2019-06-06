@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16127,7 +16127,7 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="M1" library="untitled" deviceset="CC1101_WIRELES_MODULE" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="1,5k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="1.5k"/>
 <part name="P+4" library="supply1" deviceset="+5V" device="" value="+3.3V"/>
 <part name="P+3" library="supply1" deviceset="+5V" device="" value="+3.3V"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -16161,8 +16161,8 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="M0805" value="4,7k"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="M0805" value="4,7k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="M0805" value="4.7k"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="M0805" value="4.7k"/>
 <part name="P+6" library="supply1" deviceset="+5V" device="" value="+3V"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
@@ -16190,8 +16190,8 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="SJ1" library="jumper" deviceset="SJ" device=""/>
 <part name="CONFIG" library="switch-tact" deviceset="DTSM-3" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="M0805" value="8,2/22"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="M0805" value="8,2"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="M0805" value="470/33/22"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="M0805" value="100/10/22"/>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
 <part name="PAD1" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD2" library="wirepad" deviceset="SMD2" device=""/>
@@ -16204,12 +16204,12 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <part name="IC7" library="1wire_v6" deviceset="DS18B20" device=""/>
 <part name="P+11" library="supply1" deviceset="+5V" device="" value="+3.3V"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="4k7"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="P+12" library="supply1" deviceset="+5V" device="" value="+3.3V"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="1µ"/>
 <part name="C10" library="rcl" deviceset="CPOL-EU" device="SMCA" value="22µ"/>
 <part name="T1" library="transistor-small-signal" deviceset="BSS123" device="" value="IRML6344"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="M0805" value="4,7k"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="M0805" value="4.7k"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
 <part name="IC3" library="MAX44009_v6" deviceset="MAX44009" device=""/>
@@ -16219,6 +16219,7 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <part name="IC4" library="TSL256x" deviceset="TSL256*" device="FN"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="M0805" value="100k"/>
 <part name="P+14" library="supply1" deviceset="+5V" device="" value="+3V"/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16228,7 +16229,7 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <text x="208.28" y="127" size="1.778" layer="97">I2C address: 0x77</text>
 <text x="208.28" y="127" size="1.778" layer="97">I2C address: 0x77</text>
 <text x="208.28" y="106.68" size="1.778" layer="97" rot="MR180">I2C address: 0x76</text>
-<text x="120.65" y="124.46" size="1.778" layer="97" rot="MR180">either T1/R4 OR
+<text x="93.98" y="128.27" size="1.778" layer="97" rot="MR180">either T1/R4 OR
 SJ2 closed</text>
 <text x="124.46" y="152.4" size="1.778" layer="97">I2C address: 0x4A</text>
 </plain>
@@ -16323,13 +16324,13 @@ SJ2 closed</text>
 <instance part="CONFIG" gate="G$1" x="160.02" y="55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="158.115" y="62.23" size="1.778" layer="95"/>
 </instance>
-<instance part="R2" gate="G$1" x="99.06" y="132.08" smashed="yes">
-<attribute name="NAME" x="98.044" y="133.8326" size="1.778" layer="95"/>
-<attribute name="VALUE" x="95.758" y="128.778" size="1.778" layer="96"/>
+<instance part="R2" gate="G$1" x="90.17" y="160.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="91.9226" y="161.036" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="88.392" y="154.178" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R3" gate="G$1" x="114.3" y="132.08" smashed="yes">
-<attribute name="NAME" x="110.744" y="133.8326" size="1.778" layer="95"/>
-<attribute name="VALUE" x="116.078" y="133.858" size="1.778" layer="96"/>
+<instance part="R3" gate="G$1" x="90.17" y="147.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="91.9226" y="150.876" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="88.392" y="141.478" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="162.56" y="0"/>
@@ -16350,17 +16351,10 @@ SJ2 closed</text>
 </instance>
 <instance part="IC7" gate="P" x="248.92" y="91.44" smashed="yes"/>
 <instance part="IC7" gate="_1W" x="243.84" y="91.44" smashed="yes"/>
-<instance part="P+11" gate="1" x="248.92" y="104.14" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="246.38" y="104.14" size="1.778" layer="96"/>
-</instance>
+<instance part="P+11" gate="1" x="248.92" y="104.14" rot="MR0"/>
 <instance part="GND21" gate="1" x="248.92" y="81.28" rot="MR0"/>
-<instance part="R8" gate="G$1" x="234.95" y="96.52" smashed="yes" rot="R270">
-<attribute name="NAME" x="238.5314" y="95.25" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="233.172" y="95.25" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+12" gate="1" x="234.95" y="104.14" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="228.6" y="102.87" size="1.778" layer="96"/>
-</instance>
+<instance part="R8" gate="G$1" x="234.95" y="96.52" rot="R270"/>
+<instance part="P+12" gate="1" x="234.95" y="104.14" rot="MR0"/>
 <instance part="C12" gate="G$1" x="200.66" y="71.12" smashed="yes">
 <attribute name="NAME" x="195.834" y="71.501" size="1.778" layer="95"/>
 <attribute name="VALUE" x="197.104" y="66.421" size="1.778" layer="96"/>
@@ -16369,18 +16363,18 @@ SJ2 closed</text>
 <attribute name="NAME" x="62.103" y="20.8026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="62.103" y="15.7226" size="1.778" layer="96"/>
 </instance>
-<instance part="T1" gate="G$1" x="128.27" y="132.08" smashed="yes" rot="MR270">
-<attribute name="NAME" x="125.73" y="137.16" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="120.65" y="129.54" size="1.778" layer="96" rot="MR180"/>
+<instance part="T1" gate="G$1" x="90.17" y="135.89" smashed="yes" rot="MR0">
+<attribute name="NAME" x="95.25" y="138.43" size="1.778" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="86.36" y="128.27" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="R4" gate="G$1" x="134.62" y="137.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="136.144" y="137.6426" size="1.778" layer="95"/>
-<attribute name="VALUE" x="136.398" y="135.128" size="1.778" layer="96"/>
+<instance part="R4" gate="G$1" x="109.22" y="133.35" smashed="yes">
+<attribute name="NAME" x="106.934" y="135.1026" size="1.778" layer="95"/>
+<attribute name="VALUE" x="107.188" y="130.048" size="1.778" layer="96"/>
 </instance>
-<instance part="GND20" gate="1" x="134.62" y="128.27" rot="MR0"/>
-<instance part="SJ2" gate="1" x="125.73" y="142.24" smashed="yes">
-<attribute name="NAME" x="123.825" y="144.78" size="1.778" layer="95"/>
-<attribute name="VALUE" x="123.19" y="138.43" size="1.778" layer="96"/>
+<instance part="GND20" gate="1" x="90.17" y="127" rot="MR0"/>
+<instance part="SJ2" gate="1" x="96.52" y="142.24" smashed="yes">
+<attribute name="NAME" x="94.615" y="144.78" size="1.778" layer="95"/>
+<attribute name="VALUE" x="93.98" y="138.43" size="1.778" layer="96"/>
 </instance>
 <instance part="IC3" gate="G$1" x="139.7" y="165.1" smashed="yes">
 <attribute name="NAME" x="132.715" y="169.545" size="1.778" layer="95" ratio="12"/>
@@ -16400,6 +16394,7 @@ SJ2 closed</text>
 <instance part="P+14" gate="1" x="182.88" y="68.58" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="180.34" y="71.12" size="1.778" layer="96" rot="MR180"/>
 </instance>
+<instance part="GND23" gate="1" x="115.57" y="125.73" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -16559,11 +16554,14 @@ SJ2 closed</text>
 </segment>
 <segment>
 <pinref part="T1" gate="G$1" pin="S"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="133.35" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="134.62" y1="130.81" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
-<junction x="134.62" y="132.08"/>
+<wire x1="90.17" y1="129.54" x2="90.17" y2="130.81" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="133.35" x2="115.57" y2="133.35" width="0.1524" layer="91"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="115.57" y1="133.35" x2="115.57" y2="128.27" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="GND"/>
@@ -16882,14 +16880,16 @@ SJ2 closed</text>
 </segment>
 <segment>
 <pinref part="T1" gate="G$1" pin="G"/>
-<wire x1="130.81" y1="137.16" x2="130.81" y2="142.24" width="0.1524" layer="91"/>
-<label x="134.62" y="142.24" size="1.778" layer="95"/>
+<label x="109.22" y="143.51" size="1.778" layer="95"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="130.81" y1="142.24" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="142.24" x2="137.16" y2="142.24" width="0.1524" layer="91"/>
-<junction x="134.62" y="142.24"/>
 <pinref part="SJ2" gate="1" pin="2"/>
-<junction x="130.81" y="142.24"/>
+<wire x1="101.6" y1="142.24" x2="102.87" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="142.24" x2="111.76" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="133.35" x2="102.87" y2="133.35" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="133.35" x2="95.25" y2="133.35" width="0.1524" layer="91"/>
+<junction x="102.87" y="133.35"/>
+<wire x1="102.87" y1="133.35" x2="102.87" y2="142.24" width="0.1524" layer="91"/>
+<junction x="102.87" y="142.24"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -16906,12 +16906,10 @@ SJ2 closed</text>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="132.08" x2="106.68" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="132.08" x2="106.68" y2="147.32" width="0.1524" layer="91"/>
-<junction x="106.68" y="132.08"/>
-<wire x1="106.68" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
-<label x="134.62" y="147.32" size="1.778" layer="95"/>
+<wire x1="90.17" y1="154.94" x2="90.17" y2="152.4" width="0.1524" layer="91"/>
+<junction x="90.17" y="154.94"/>
+<wire x1="90.17" y1="154.94" x2="111.76" y2="154.94" width="0.1524" layer="91"/>
+<label x="109.22" y="156.21" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -16957,8 +16955,8 @@ SJ2 closed</text>
 <net name="U-BAT" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="132.08" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
-<label x="83.82" y="132.08" size="1.778" layer="95"/>
+<wire x1="90.17" y1="165.1" x2="90.17" y2="167.64" width="0.1524" layer="91"/>
+<label x="90.17" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="BATT"/>
@@ -17149,11 +17147,10 @@ SJ2 closed</text>
 <segment>
 <pinref part="T1" gate="G$1" pin="D"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="123.19" y1="132.08" x2="120.65" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="90.17" y1="140.97" x2="90.17" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="SJ2" gate="1" pin="1"/>
-<wire x1="120.65" y1="132.08" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="120.65" y1="142.24" x2="120.65" y2="132.08" width="0.1524" layer="91"/>
-<junction x="120.65" y="132.08"/>
+<wire x1="91.44" y1="142.24" x2="90.17" y2="142.24" width="0.1524" layer="91"/>
+<junction x="90.17" y="142.24"/>
 </segment>
 </net>
 <net name="INT_MAX" class="0">
