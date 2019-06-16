@@ -16204,7 +16204,7 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <part name="IC7" library="1wire_v6" deviceset="DS18B20" device=""/>
 <part name="P+11" library="supply1" deviceset="+5V" device="" value="+3.3V"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="4k7"/>
 <part name="P+12" library="supply1" deviceset="+5V" device="" value="+3.3V"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="1µ"/>
 <part name="C10" library="rcl" deviceset="CPOL-EU" device="SMCA" value="22µ"/>
@@ -16346,15 +16346,22 @@ SJ2 closed</text>
 <instance part="P+10" gate="1" x="238.76" y="125.73" rot="MR0"/>
 <instance part="C11" gate="G$1" x="238.76" y="118.11"/>
 <instance part="IC7" gate="A" x="248.92" y="91.44" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.015" y="95.885" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="254.635" y="88.265" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="243.205" y="94.615" size="1.778" layer="95"/>
+<attribute name="VALUE" x="238.125" y="86.995" size="1.778" layer="96"/>
 </instance>
 <instance part="IC7" gate="P" x="248.92" y="91.44" smashed="yes"/>
 <instance part="IC7" gate="_1W" x="243.84" y="91.44" smashed="yes"/>
-<instance part="P+11" gate="1" x="248.92" y="104.14" rot="MR0"/>
+<instance part="P+11" gate="1" x="248.92" y="104.14" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="245.11" y="106.68" size="1.778" layer="96" rot="MR180"/>
+</instance>
 <instance part="GND21" gate="1" x="248.92" y="81.28" rot="MR0"/>
-<instance part="R8" gate="G$1" x="234.95" y="96.52" rot="R270"/>
-<instance part="P+12" gate="1" x="234.95" y="104.14" rot="MR0"/>
+<instance part="R8" gate="G$1" x="234.95" y="96.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="233.4514" y="95.25" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="238.252" y="95.25" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+12" gate="1" x="234.95" y="104.14" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="229.87" y="106.68" size="1.778" layer="96" rot="MR180"/>
+</instance>
 <instance part="C12" gate="G$1" x="200.66" y="71.12" smashed="yes">
 <attribute name="NAME" x="195.834" y="71.501" size="1.778" layer="95"/>
 <attribute name="VALUE" x="197.104" y="66.421" size="1.778" layer="96"/>
