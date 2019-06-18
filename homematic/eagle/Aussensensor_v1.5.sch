@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16190,8 +16190,8 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="SJ1" library="jumper" deviceset="SJ" device=""/>
 <part name="CONFIG" library="switch-tact" deviceset="DTSM-3" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="M0805" value="470/33/22"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="M0805" value="100/10/22"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="M0805" value="470/33/10"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="M0805" value="100/10/10"/>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
 <part name="PAD1" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD2" library="wirepad" deviceset="SMD2" device=""/>
@@ -16208,7 +16208,7 @@ TSL2560 (SMBus), TSL2561 (I2C) Light-to-digital converter</description>
 <part name="P+12" library="supply1" deviceset="+5V" device="" value="+3.3V"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="1µ"/>
 <part name="C10" library="rcl" deviceset="CPOL-EU" device="SMCA" value="22µ"/>
-<part name="T1" library="transistor-small-signal" deviceset="BSS123" device="" value="IRML6344"/>
+<part name="T1" library="transistor-small-signal" deviceset="BSS123" device="" value="IRML6344/SI2302"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="M0805" value="4.7k"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
@@ -16372,7 +16372,7 @@ SJ2 closed</text>
 </instance>
 <instance part="T1" gate="G$1" x="90.17" y="135.89" smashed="yes" rot="MR0">
 <attribute name="NAME" x="95.25" y="138.43" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="86.36" y="128.27" size="1.778" layer="96" rot="MR90"/>
+<attribute name="VALUE" x="86.36" y="120.65" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R4" gate="G$1" x="109.22" y="133.35" smashed="yes">
 <attribute name="NAME" x="106.934" y="135.1026" size="1.778" layer="95"/>
