@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16278,10 +16278,10 @@ SJ2 closed</text>
 <instance part="JP2" gate="G$1" x="73.66" y="142.24" rot="R180"/>
 <instance part="JP1" gate="G$1" x="5.08" y="144.78"/>
 <instance part="ANT" gate="P" x="241.3" y="58.42" rot="R180"/>
-<instance part="C2" gate="G$1" x="248.92" y="170.18" rot="R270"/>
-<instance part="C3" gate="G$1" x="248.92" y="144.78" rot="R270"/>
-<instance part="C4" gate="G$1" x="248.92" y="139.7" rot="R270"/>
-<instance part="GND13" gate="1" x="254" y="165.1" rot="MR0"/>
+<instance part="C2" gate="G$1" x="254" y="163.83" rot="R180"/>
+<instance part="C3" gate="G$1" x="259.08" y="139.7" rot="R180"/>
+<instance part="C4" gate="G$1" x="254" y="134.62" rot="R180"/>
+<instance part="GND13" gate="1" x="254" y="157.48" rot="MR0"/>
 <instance part="GND14" gate="1" x="259.08" y="129.54" rot="MR0"/>
 <instance part="GND15" gate="1" x="254" y="129.54" rot="MR0"/>
 <instance part="GND16" gate="1" x="200.66" y="129.54" rot="MR0"/>
@@ -16455,20 +16455,16 @@ SJ2 closed</text>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="254" y1="132.08" x2="254" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="254" y1="139.7" x2="251.46" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="259.08" y1="132.08" x2="259.08" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="144.78" x2="251.46" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="132.08" x2="259.08" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="254" y1="167.64" x2="254" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="254" y1="170.18" x2="251.46" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="254" y1="160.02" x2="254" y2="161.29" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="GND"/>
@@ -17068,12 +17064,13 @@ SJ2 closed</text>
 <wire x1="241.3" y1="139.7" x2="233.68" y2="139.7" width="0.1524" layer="91"/>
 <junction x="241.3" y="139.7"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="170.18" x2="243.84" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="170.18" x2="254" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="254" y1="170.18" x2="254" y2="168.91" width="0.1524" layer="91"/>
 <junction x="241.3" y="170.18"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="144.78" x2="243.84" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="144.78" x2="259.08" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="139.7" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="139.7" x2="254" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="241.3" y1="172.72" x2="241.3" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="170.18" x2="233.68" y2="170.18" width="0.1524" layer="91"/>
