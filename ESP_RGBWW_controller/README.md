@@ -15,9 +15,9 @@ Custom hardware board for controlling 5 LED channels via PWM (RGB + warm/cold wh
   * schematic
     ![picture](pic/ESP12_RGBWW_v2.5_sch.jpg)
   * layout (top)
-    ![picture](ESP12_RGBWW_v2.5_top.png)
+    ![picture](pic/ESP12_RGBWW_v2.5_top.png)
   * layout (bot) 
-    ![picture](ESP12_RGBWW_v2.5_bot.png)
+    ![picture](pic/ESP12_RGBWW_v2.5_bot.png)
 
 # Assembly
 Assembly of the PCB board is straight forward, solder all parts to the PCB:
