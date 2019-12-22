@@ -24,14 +24,14 @@ Assembly of the PCB board is straight forward, solder all parts to the PCB:
 
 ## Parts
 - 1x diode B160-13-F (D1)
-- 1x power inductor NPI75C560KTRF 56 µH (L1)
-- 1x DC/DC converter TPS5410DR (U1)
-- 1x ESP8266-ESP12
-- 5x AOD2910 MOSFET (logic level gate threshold)
+- 1x power inductor NPI75C560KTRF/DLG-0705-560 56 µH (L1)
+- 1x DC/DC converter TPS5410 (U1)
+- 1x ESP8266-ESP12 (ESP-12)
+- 5x AOD2810/AOD2910 MOSFET (logic level gate threshold, Q1 ... Q5)
 - 12x 10 kohm resistors, 0805 (R1 - R11, R13)
 - 1x 5.9 kohm resistor, 0805 (R12)
-- 1x 4.7 µF capacitor 12o6 (CIN)
-- 1x 330 µF electrolytic capacitor RM 2.5 mm (C1) 
+- 1x 4.7 µF capacitor 1206 (CIN)
+- 1x 330 µF electrolytic capacitor RM 2.5 mm (C1)
 - 1x 220 µF electrolytic capacitor RM 2.5 mm (C3)
 - 1x 100 nF capacitor 0805 (C2)
 - 2x 10 nF capacitor 0805 (C4, C5)
