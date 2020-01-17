@@ -1,7 +1,7 @@
 This project is a fork of [patrickjahns](https://github.com/patrickjahns) and [pljakobs](https://github.com/pljakobs) version of the RGBWW controller PCB on [github](https://github.com/pljakobs/esp_rgbww_controller/tree/3382119fb962fafa23e8ef6323f3a7b23ad8b1d9).
 
 # ESP8266 WiFi RGBWW LED dimmer
-Custom hardware board for controlling 5 LED channels via PWM (RGB + warm/cold white). It is designed for max current ~6.5 A per channel ([thoughts on max. current](https://forum.fhem.de/index.php/topic,101240.msg947190.html#msg947190)).
+Custom hardware board for controlling 5 LED channels via PWM (RGB + warm/cold white). It is designed for max. current ~6.5 A per channel ([thoughts on max. current](https://forum.fhem.de/index.php/topic,101240.msg947190.html#msg947190)).
 
 # Changelog
 
@@ -44,16 +44,16 @@ Assembly of the PCB board is straight forward, solder all parts to the PCB:
 - 3x micro SMD tactile switch 2-pin 3*6*2.5 mm (CLR, PRG, RST)
 
 ### Recommended steps
-- close solder jumper if you want to have RESET connected to a GPIO (for software reboot)
-- start with soldering SMD capacitors, diode and resistors
-- solder power inductor and DC/DC converter
-- solder SMD tactile switches
-- solder eletrolytic capacitors
-- solder 2-pin terminal blocks __or__ DC jack
-- __check__ the correct output voltage of the DC/DC converter 
-- solder ESP8266 module 
-- solder FETs
-- solder remaining terminal blocks and pin headers
+- ~~close solder jumper if you want to have RESET connected to a GPIO (for software reboot)~~
+- ~~start with soldering SMD capacitors, diode and resistors~~
+- ~~solder power inductor and DC/DC converter~~
+- ~~solder SMD tactile switches~~
+- ~~solder eletrolytic capacitors~~
+- ~~solder 2-pin terminal blocks __or__ DC jack~~
+- ~~__check__ the correct output voltage of the DC/DC converter ~~
+- ~~solder ESP8266 module~~
+- ~~solder FETs~~
+- ~~solder remaining terminal blocks and pin headers~~
 
 # Pictures
 
