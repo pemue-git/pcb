@@ -17,4 +17,4 @@ Interface for Viessmann heating and solar controls (USB, RaspberryPi and WLAN)
 ## Homematic sensors
 Several versions of Homematic sensors for usage inside and outside
 
-[Aussensensor](homematic)
+[Aussensensor](homematic/aussensensor)
