@@ -28,8 +28,8 @@ Assembly of the PCB board is straight forward, solder all parts to the PCB:
 - 1x DC/DC converter TPS5410 (U1)
 - 1x ESP8266-ESP12 (ESP-12)
 - 5x AOD2810/AOD2910 MOSFET (logic level gate threshold, Q1 ... Q5)
-- 12x 10 kohm resistors, 0805 (R1 - R11, R13)
-- 1x 5.9 kohm resistor, 0805 (R12)
+- 12x 10 kohm resistors 0805 (R1 - R11, R13)
+- 1x 5.9 kohm resistor 0805 (R12)
 - 1x 4.7 µF capacitor 1206 (CIN)
 - 1x 330 µF electrolytic capacitor RM 2.5 mm (C1)
 - 1x 220 µF electrolytic capacitor RM 2.5 mm (C3)
@@ -50,7 +50,7 @@ Assembly of the PCB board is straight forward, solder all parts to the PCB:
 - ~~solder SMD tactile switches~~
 - ~~solder eletrolytic capacitors~~
 - ~~solder 2-pin terminal blocks __or__ DC jack~~
-- ~~__check__ the correct output voltage of the DC/DC converter ~~
+- __check__ ~~the correct output voltage of the DC/DC converter ~~
 - ~~solder ESP8266 module~~
 - ~~solder FETs~~
 - ~~solder remaining terminal blocks and pin headers~~
