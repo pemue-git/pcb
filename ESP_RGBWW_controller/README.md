@@ -50,7 +50,7 @@ Assembly of the PCB board is straight forward, solder all parts to the PCB:
 - ~~solder SMD tactile switches~~
 - ~~solder eletrolytic capacitors~~
 - ~~solder 2-pin terminal blocks __or__ DC jack~~
-- __check__ ~~the correct output voltage of the DC/DC converter ~~
+- ~~__check__ the correct output voltage of the DC/DC converter~~
 - ~~solder ESP8266 module~~
 - ~~solder FETs~~
 - ~~solder remaining terminal blocks and pin headers~~
