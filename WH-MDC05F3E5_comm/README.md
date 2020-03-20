@@ -12,8 +12,10 @@ Communication PCB for a Panasonic [WH-MDC05f3e5](http://aquarea.smallsolutions.d
 * v3.0 (SMD version)
   * all parts changed to SMD
   * layout top
+  
     ![picture](pic/WH-MDC05F3E5_comm_v3.0_top.png)
   * layout bottom
+  
     ![picture](pic/WH-MDC05F3E5_comm_v3.0_bot.png)
   * assembled PCB and USB2serial converter
     ![picture](pic/WH-MDC05F3E5_comm_v3.0-pic01.jpg)
