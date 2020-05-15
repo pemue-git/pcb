@@ -11,17 +11,17 @@ Communication PCB for a Panasonic WH-MDC05f3e5 heat pump also called "Geisha": [
 ## **L**aCrosse**G**ate**W**ay
 ESP8266 based gateway for LaCrosse sensors inlcuding extension PCB
 
-![picture](pic/in_work_274x240.png)
+![picture](pic/in_work_100x88.jpg)
 
 ## nanoCUL
 Several versions for a CC1101 USB Light
 
-![picture](pic/in_work_274x240.png)
+![picture](pic/in_work_100x88.jpg)
 
 ## Optolink
 Interface for Viessmann heating and solar controls (USB, RaspberryPi and WLAN)
 
-![picture](pic/in_work_274x240.png)
+![picture](pic/in_work_100x88.jpg)
 
 ## Homematic sensors
 Several versions of Homematic sensors for usage inside and outside:
