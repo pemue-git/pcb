@@ -76,4 +76,4 @@ The schematic and board files are compatible with EAGLE v6.x.
 # Credits
 Thanks to RiRomain for his excellent documented [ESP RGB Project](https://github.com/RiRomain/esp-dimmer-hardware).
 Thanks to [patrickjahns](https://github.com/patrickjahns) and [pljakobs](https://github.com/pljakobs) for their excellent work on the previous versions of the hardware.
-Thanks to [vbs](https://github.com/verybadsoldier) for the excellent work and maintaining of the firmware.
+Thanks to [vbs](https://github.com/verybadsoldier) for the excellent work of maintaining the firmware.

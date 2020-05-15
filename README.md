@@ -8,7 +8,7 @@ This repository contains several PCBs for home automation, discussions see FHEM 
 ## Communication PCB for a Panasonic heat pump
 Communication PCB for a Panasonic WH-MDC05f3e5 heat pump also called "Geisha": [WH-MDC05F3E5_comm](WH-MDC05F3E5_comm).
 
-## **L**aCrosse**G**ate**W**ay
+## **L**aCrosse **G**ate**W**ay
 ESP8266 based gateway for LaCrosse sensors inlcuding extension PCB
 
 ![picture](pic/in_work_100x88.jpg)
@@ -25,4 +25,5 @@ Interface for Viessmann heating and solar controls (USB, RaspberryPi and WLAN)
 
 ## Homematic sensors
 Several versions of Homematic sensors for usage inside and outside:
-Based on [Dirk's](https://wiki.fhem.de/wiki/Universalsensor) version of the sensor, several modifications of the [outside sensor](homematic/aussensensor) have been made.
+
+Based on [Dirk's version](https://wiki.fhem.de/wiki/Universalsensor) of the sensor, several modifications of the [outside sensor](homematic/aussensensor) have been made.
