@@ -24,12 +24,14 @@ Communication PCB for a Panasonic [WH-MDC05f3e5](http://aquarea.smallsolutions.d
     
 
 # Assembly
-Necessary for the communication is an USB2serial converter (needed signals: 3.3 V, GND, RxD, TxD and __RTS__). The baud rate needs to be set to [960 baud](https://forum.fhem.de/index.php/topic,104628.msg989942.html#msg989942).
+Necessary for the communication is an USB2serial converter (needed signals: 3.3 V, GND, RxD, TxD and __RTS__). The baud rate needs to be set to [960 baud](https://forum.fhem.de/index.php/topic,80916.msg729625.html#msg729625).
 
 # Modification
 The schematic and board files are compatible with EAGLE v6.x.
 
 # Resources
 * [WH-MDC05f3e5 documents](http://aquarea.smallsolutions.de/index.php?title=WH-MDC05f3e5#Links_zu_Original_Dokumenten)
-* [discussion in FHEM forum](https://forum.fhem.de/index.php/topic,104628.msg985249.html#msg985249)
+* [WiFi module for WH-MDC05f3e5](https://www.haustechnikdialog.de/Forum/t/181931/Intensishome-Wifi-Modul-in-Kombination-mit-der-Panasonic-WH-MDC05F3E5-Geisha) and discussion in Haustechnik Forum
+* [PCB hardware discussion](https://forum.fhem.de/index.php/topic,104628.msg985249.html#msg985249) in FHEM forum
+* [setup of communcation PCB](https://forum.fhem.de/index.php/topic,80916.msg729625.html#msg729625) in FHEM forum
 * for documentation purposes: [online check of MD files](https://dillinger.io/)
