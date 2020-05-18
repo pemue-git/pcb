@@ -22,6 +22,7 @@ Several versions for a CC1101 USB Light
 Interface for Viessmann heating and solar controls (USB, RaspberryPi and WLAN)
 
 ![picture](pic/in_work_100x88.jpg)
+
 Firmware for Optolink interface can be found in [vitotronic-interface](https://github.com/pemue-git/vitotronic_interface).
 
 ## Homematic sensors
