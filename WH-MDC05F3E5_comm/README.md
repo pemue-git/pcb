@@ -19,12 +19,13 @@ Communication PCB for a Panasonic [WH-MDC05f3e5](http://aquarea.smallsolutions.d
     ![picture](pic/WH-MDC05F3E5_comm_v3.0_bot.png)
   * assembled PCB and USB2serial converter
     ![picture](pic/WH-MDC05F3E5_comm_v3.0-pic01.jpg)
+
   * [schematic](WH-MDC05F3E5_comm_v3.0_sch.pdf)
   * [gerber files](gerber/WH-MDC05F3E5_comm_v3.0_gerber.zip)
-    
+  * [bill of material](WH-MDC05F3E5_comm_v3.0_bom.xls)
 
 # Assembly
-Necessary for the communication is an USB2serial converter (needed signals: 3.3 V, GND, RxD, TxD and __RTS__). The controller chip needs to be a [CP2102](https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf) w/ __RTS__ pin. The baud rate needs to be set to [960 baud](https://forum.fhem.de/index.php/topic,80916.msg729625.html#msg729625).
+Necessary for the communication is an USB2serial converter (needed signals: 3.3 V, GND, RxD, TxD and __RTS__). The controller chip needs to be a [CP2102](https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf) and __RTS__ pin needs to be available. The baud rate needs to be set to [960 baud](https://forum.fhem.de/index.php/topic,80916.msg729625.html#msg729625).
 
 # Modification
 The schematic and board files are compatible with EAGLE v6.x.
