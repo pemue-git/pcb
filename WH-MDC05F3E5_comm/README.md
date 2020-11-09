@@ -25,6 +25,7 @@ Communication PCB for a Panasonic [WH-MDC05f3e5](http://aquarea.smallsolutions.d
   * [bill of material](WH-MDC05F3E5_comm_v3.0_bom.xls)
 
 # Assembly
+__CAUTION__: Pin 1 marking of 4011B is a chamfer at the IC package, which is indication the position of pin 1. 
 Necessary for the communication is an USB2serial converter (needed signals: 3.3 V, GND, RxD, TxD and __RTS__). The controller chip needs to be a [CP2102](https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf) and __RTS__ pin needs to be available. The baud rate needs to be set to [960 baud](https://forum.fhem.de/index.php/topic,80916.msg729625.html#msg729625).
 
 # Modification
@@ -36,5 +37,6 @@ The schematic and board files are compatible with EAGLE v6.x.
 * [PCB hardware discussion](https://forum.fhem.de/index.php/topic,104628.msg985249.html#msg985249) in FHEM forum
 * [setup of communcation PCB](https://forum.fhem.de/index.php/topic,80916.msg729625.html#msg729625) in FHEM forum
 * [FHEM control](http://aquarea.smallsolutions.de/index.php?title=Steuerung_via_FHEM) in aquarea forum
-* [FHEM module](https://github.com/der-lolo/aqaurea)
+* [FHEM module](https://github.com/der-lolo/aquarea)
+* [Tweakers forum](https://gathering.tweakers.net/forum/list_message/64194378#64194378) (NL)
 * for documentation purposes: [online check of MD files](https://dillinger.io/)
