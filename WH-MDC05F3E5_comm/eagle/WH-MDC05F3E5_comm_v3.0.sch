@@ -4966,7 +4966,6 @@ DIN A4, landscape with extra doc field</description>
 <text x="218.44" y="162.56" size="1.778" layer="95">ELV RS232-USB Wandler UM2102
 oder kompatibel (mit RTS, 960 bd)</text>
 <wire x1="264.16" y1="180.34" x2="264.16" y2="35.56" width="0.1524" layer="95"/>
-<wire x1="0" y1="35.56" x2="203.2" y2="35.56" width="0.1524" layer="95"/>
 <wire x1="205.74" y1="35.56" x2="264.16" y2="35.56" width="0.1524" layer="95"/>
 <wire x1="203.2" y1="68.58" x2="203.2" y2="55.88" width="0.1524" layer="95"/>
 <wire x1="205.74" y1="68.58" x2="205.74" y2="55.88" width="0.1524" layer="95"/>
@@ -5006,6 +5005,11 @@ oder kompatibel (mit RTS, 960 bd)</text>
 <text x="228.6" y="88.9" size="1.778" layer="95">anstelle Paket Register 18 wird
 ein eigenes Paket gesendet</text>
 <text x="12.7" y="38.1" size="1.778" layer="95">nicht verwendete Gatter</text>
+<text x="12.7" y="22.86" size="1.778" layer="95">Pin 1 Markierung:
+Das IC 4011D hat keine Pin 1 Markierung, 
+sondern auf der langen Seite des Gehäuses 
+eine abgeschrägte Kante. Diese markiert
+(links) den Pin 1.</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="101.6" y="142.24"/>

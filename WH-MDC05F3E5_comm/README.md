@@ -20,6 +20,12 @@ Communication PCB for a Panasonic [WH-MDC05f3e5](http://aquarea.smallsolutions.d
   * assembled PCB and USB2serial converter
     ![picture](pic/WH-MDC05F3E5_comm_v3.0-pic01.jpg)
 
+  * assembled PCB and USB2serial converter (Waveshare)
+    ![picture](pic/WH-MDC05F3E5_comm_v3.0-pic02.jpg)
+
+  * assembled PCB and USB2serial converter (bottom view)
+    ![picture](pic/WH-MDC05F3E5_comm_v3.0-pic03.jpg)
+
   * [schematic](WH-MDC05F3E5_comm_v3.0_sch.pdf)
   * [gerber files](gerber/WH-MDC05F3E5_comm_v3.0_gerber.zip)
   * [bill of material](WH-MDC05F3E5_comm_v3.0_bom.xls)
@@ -27,6 +33,7 @@ Communication PCB for a Panasonic [WH-MDC05f3e5](http://aquarea.smallsolutions.d
 # Assembly
 __CAUTION__: Pin 1 marking of 4011B is a chamfer at the IC package, indicating the position of pin 1 (chamfer at the left).  
 Necessary for the communication is an USB2serial converter (needed signals: 3.3 V, GND, RxD, TxD and __RTS__). The controller chip needs to be a [CP2102](https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf) and __RTS__ pin needs to be available. The baud rate needs to be set to [960 baud](https://forum.fhem.de/index.php/topic,80916.msg729625.html#msg729625).
+An example for a suitable USB2serial converter is [here](https://www.reichelt.de/entwicklerboards-microusb-buchse-auf-uart-cp2102-debo-musb2uart-2-p266052.html?CCOUNTRY=445&LANGUAGE=de&trstct=pos_0&nbc=1&&r=1).
 
 # Modification
 The schematic and board files are compatible with EAGLE v6.x.
